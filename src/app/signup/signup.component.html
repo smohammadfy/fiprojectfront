@@ -1,0 +1,33 @@
+<mat-card class="mycard" dir="rtl">
+  <mat-card-header class="myheader">
+    <h1 class="myhone">
+    ثبت نام
+    </h1>
+  </mat-card-header>
+  <mat-form-field class="myform" appearance="fill">
+    <mat-label>ایمیل</mat-label>
+    <input matInput placeholder="m.fani@aut.ac.ir" [formControl]="email" required [ngModel]="mail">
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="myform" appearance="fill">
+    <mat-label>نام</mat-label>
+    <input matInput placeholder="سید محمد" [ngModel]="name">
+  </mat-form-field>
+  <mat-form-field class="myform" appearance="fill">
+    <mat-label>نام خانوادگی</mat-label>
+    <input matInput placeholder="فانی یزدی" [ngModel]="lastname">
+  </mat-form-field>
+  <mat-form-field class="myform" appearance="fill">
+    <mat-label>شماره همراه</mat-label>
+    <input matInput placeholder="1125***0912" [ngModel]="phonenumber">
+  </mat-form-field>
+  <mat-form-field class="myform" appearance="fill">
+    <mat-label>رمز عبور</mat-label>
+    <input matInput placeholder="Password123" [formControl]="pass" required [ngModel]="password">
+  </mat-form-field>
+  <div class="btncontainer">
+  <mat-button-toggle class="mybtn" (click)="submit()">ثبت نام</mat-button-toggle>
+  <mat-button-toggle class="mybtn">ورود، قبلا ثبت نام کرده ام</mat-button-toggle>
+  </div>
+</mat-card>
+

@@ -1,0 +1,9 @@
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #032c40;
+  height: 80vh;
+  width: 100vw;
+}

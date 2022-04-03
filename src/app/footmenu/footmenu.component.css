@@ -1,0 +1,17 @@
+.container{
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 20vh;
+  background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.button-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
